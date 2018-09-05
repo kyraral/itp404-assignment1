@@ -17,11 +17,11 @@ promise.then (function(result)
 let html=`  <h2> Results </h2>`+'';
 result.data.children.forEach(function (dataChild) {
   html+=
-  `<div style="margin-top:10px;">
-  <p>Titile: ${dataChild.data.title}</p>
-  <p>Score: ${dataChild.data.score}</p>
-  <p>Author: ${dataChild.data.author}</p>
-  </div>`
+  `<div class="item">
+  <p>Titile: ${dataChild.data.title} </p>
+  <p>Score: ${dataChild.data.score} </p>
+  <p>Author: ${dataChild.data.author} </p>
+  </div> <hr>`
 });
 
 $('#results').html(html);
