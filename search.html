@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search Form</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<style>
+		.form-check-label {
+			padding-top: calc(.5rem - 1px * 2);
+			padding-bottom: calc(.5rem - 1px * 2);
+			margin-bottom: 0;
+		}
+      #submit{margin-left: 500px; margin-top: 10px;}
+	</style>
+</head>
+<body>
+
+
+  <div class="container">
+
+		<div class="row">
+			<h1 class="col-12 mt-4 mb-4">Search Form</h1>
+		</div> <!-- .row -->
+	</div> <!-- .container -->
+	<div class="container">
+
+			<div class="form-group row">
+				<label for="name-id" class="col-sm-3 col-form-label text-sm-right">Search:</label>
+				<div class="col-sm-9">
+					<input type="text" class="form-control" id="search" name="search">
+				</div>
+
+        <button id="submit"> Submit </button>
+
+            <div id="results"> </div>
+      </div>
+
+	</div> <!-- .container -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="a1.js"></script>
+</body>
+</html>
